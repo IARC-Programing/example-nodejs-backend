@@ -1,0 +1,136 @@
+{
+  "company": [
+    {
+      "id": 1,
+      "name": "test",
+      "Status": "Ready",
+      "URL": "http://localhost:3000/",
+      "controlURL": "http://localhost:3000/",
+      "Created": "19/05/2564",
+      "Modified": "20/05/2564",
+      "email": "ad@1234.com",
+      "image": "https://www.computing.psu.ac.th/th/wp-content/uploads/2018/03/PSU-logo-Original.png",
+      "Descriptions": "เป็นข้อมูลที่ใช้ในการทดสอบ"
+    },
+    {
+      "id": 2,
+      "name": "ระบบทดสอบ",
+      "Status": "Ready",
+      "URL": "https://test-logistic.eappsoft.net/",
+      "controlURL": "http://test-logistic.ap.ngrok.io/api",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 3,
+      "name": "บจก.สินเอเชี่ยนอิมพอร์ต เอ็กพอร์ต",
+      "Status": "Ready",
+      "URL": "https://sinasian.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 4,
+      "name": "บจก.ได้ดีเอกเพรส",
+      "Status": "Ready",
+      "URL": "https://daideeexpress.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 5,
+      "name": "บจก.เคแอลโลจิสติก",
+      "Status": "Ready",
+      "URL": "https://kllogistic.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 6,
+      "name": "บจก.ศุภสิน โลจิสติก",
+      "Status": "Ready",
+      "URL": "https://suphasin.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 7,
+      "name": "บจก. ส.รุ่งรัษฎา ทรานสปอร์ต",
+      "Status": "Ready",
+      "URL": "https://s-roongratsada.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 8,
+      "name": "หจก. ทองปาน ทรานสปอร์จ",
+      "Status": "Ready",
+      "URL": "https://thongpan.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 9,
+      "name": "บจก. ปิยวัฒน์ทรานสปอร์ต",
+      "Status": "Ready",
+      "URL": "https://piyawat.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 10,
+      "name": "บจก.อัครพนธ์ ทรานสปอร์ต",
+      "Status": "Ready",
+      "URL": "https://akaraphol.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    },
+    {
+      "id": 11,
+      "name": "บจก.นิว เอ็น ซี ทรานส์ ชิปปิ้ง แอนด์ เทรดดิ้ง",
+      "Status": "Ready",
+      "URL": "https://newnc.eappsoft.net/",
+      "controlURL": "",
+      "Created": "",
+      "Modified": "NULL",
+      "email": "",
+      "image": "",
+      "Descriptions": ""
+    }
+  ]
+}
