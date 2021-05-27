@@ -1,27 +1,47 @@
-var express = require("express");
-var router = express.Router();
-const _ = require("lodash");
+const express = require('express')
+const router = express.Router()
+const _ = require('lodash')
 
-const companyData = require("../companyData.json");
-
-router.get("/:id", (req, res) => {
-  const companyId = req.params.id;
-
-  const selectedCompany = _.find(
-    companyData.company,
-    (eachCompany) => eachCompany.id === parseInt(companyId)
-  );
-  res.json(selectedCompany);
-});
+const CompanyModel = require('../model/Company')
+const companyData = require('../companyData.json')
 
 /* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.json(companyData.company);
-});
+router.get('/', function (req, res, next) {
+  CompanyModel.find({}).then((value) => {
+    //console.log(value)
+    res.json(value)
+  })
+})
 
-router.post("/", (req, res) => {
-  console.log(req.body);
-  res.sendStatus(200);
-});
+router.get('/:id', (req, res) => {
+  CompanyModel.findById(req.params.id)
+    .then((value) => {
+      res.status(200).json(value)
+    })
+    .catch((error) => {
+      res.status(404).json(error)
+    })
+})
 
-module.exports = router;
+router.post('/', (req, res) => {
+  const newlyCreateCompany = new CompanyModel(req.body)
+  if (newlyCreateCompany) {
+    newlyCreateCompany.save()
+    res.status(201).json(newlyCreateCompany)
+  } else {
+    res.status(404)
+  }
+})
+
+router.put('/:id', (req, res) => {
+  const id = req.params.id
+  CompanyModel.findByIdAndUpdate(id, req.body)
+    .then(() => {
+      res.sendStatus(200)
+    })
+    .catch((error) => {
+      res.status(404).send(error)
+    })
+})
+
+module.exports = router
